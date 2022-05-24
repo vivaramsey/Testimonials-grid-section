@@ -9,7 +9,7 @@ This is a solution to the [Testimonials grid section challenge on Frontend Mento
 <img src="/images/mobile.png" alt="mobile layout">
 
 ## Links
-- Live Site URL - [Testimonials grid section]()
+- Live Site URL - [Testimonials grid section](https://testimonials-grid-section-wheat-three.vercel.app/)
 - challenage URL - [Testimonials grid section](https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7)
 
 ### Built with
