@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@500;600&display=swap');
+
+:root{
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --grayish-blue: hsl(217, 19%, 35%);
+    --blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --black: hsl(0, 0%, 0%);
+    --ltgray: hsl(0, 0%, 81%);
+    --lt-grayish-blue: hsl(210, 46%, 95%);
+}
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin: 0;
+}
+
+body{
+    font-family:  "Barlow Semi Condensed";
+    background-color: var(--lt-grayish-blue);
+    font-weight: 500;
+}
+
+h2 {
+    font-weight: 600;
+}
+.gird-container {
+    display: grid;
+    gap: 1.5rem;
+    width: min(95%, 70rem);
+    margin: 0 auto;
+    padding: 20px 10px;
+}
+
+.testimonial > *:where(:not(:first-child)) {
+    margin-top: 1em;
+  }
+  
+.flex {
+    display: flex;
+    gap: 1rem;
+}
+.testimonial{
+    padding: 1.1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2.5rem 3.75rem 3rem -3rem #19212e29;
+}
+
+.testimonial img {
+    width: 1.75rem;
+    border-radius: 50%;
+}
+.testimonial .name {
+    font-size: 13px;
+    font-weight: 500;
+  }
+  
+  .testimonial .position {
+    font-size: 13px;
+    opacity: 50%;
+  }
+  
+  .testimonial > p:first-of-type {
+    font-size: 1.25rem;
+  }
+  
+  .testimonial > p:last-of-type {
+    opacity: 70%;
+  }
+
+.first {
+    background-color: var(--Moderate-violet);
+    background-image: url(/images/bg-pattern-quotation.svg); 
+    background-repeat: no-repeat;
+    background-position: top right 10%;
+    color: var(--White);
+}
+.second{
+    background-color: var(--grayish-blue);
+    color: var(--White);
+}
+.thrid{
+    background-color: var(--White);
+    color: var(--black);
+}
+.fourth{
+    background-color: var(--blackish-blue);
+    color: white;
+}
+.fifth{
+    background-color: var(--White);
+    color: var(--black);
+}
+
+@media (min-width:800px) {
+    .gird-container{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        padding-top: 70px;
+    }
+    .first{
+        grid-column: span 2;
+    }    
+    .testimonial:last-child{
+        grid-column: 4;
+        grid-row-start: 1;
+        grid-row-end: 3;
+    }
+    .fourth{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
